@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+
+#root{
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 22px 0 22px 0;
+}
+.logo{
+  color: rgb(15, 59, 15);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.nav-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  width: 70%;
+}
+.nav-item >.item{
+  color: rgba(51, 5, 51, 0.653);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.menu{
+  display: none;
+}
+
+@media screen and (max-width : 720px) 
+{
+  .navbar{
+    position: relative;
+    z-index: 2;
+  }
+  .nav-item {
+   position: fixed;
+   width: 100%;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   background-color: cadetblue;
+   height: 700px;
+   z-index: -1;
+   top: -100%;
+   transition: 0.5s;
+   margin: 0;
+  }
+  .nav-item.active{
+    top: 0;
+  }
+  .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    gap: 4px;
+   
+  }
+
+  .menu .bar{
+    background-color: brown;
+    width: 35px;
+    border-radius: 2px;
+    padding: 3px;
+    transition: 1s;
+  }
+  
+  .menu.active :nth-child(1){
+    transform: rotate(50deg);
+  }
+  .menu.active :nth-child(2){
+   display: none;
+  }
+  .menu.active :nth-child(3){
+    transform: rotate(-51deg);
+    margin: -10px;
+  }
+}
+.eye{
+  top: 20%;
+  left: 82%;
+  font-size: 20px;
+  color: #341e54;
+}
+.heading{
+  font-family: "Lexend", sans-serif;
+}
+
+/* input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  background: grey;
+  display: block;
+  width: 50px; 
+  height: 25px; 
+  border-radius: 25px; 
+  position: relative;
+}
+
+label::after {
+  content: '';
+  position: absolute;
+  top: 2.5px; 
+  left: 2.5px; 
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: #bada55;
+}
+
+input:checked + label::after {
+  left: calc(100% - 2.5px); 
+  transform: translateX(-100%);
+}
+
+label:active::after {
+  width: 30px; 
+}
+
+
+ */
