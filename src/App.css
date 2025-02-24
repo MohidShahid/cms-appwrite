@@ -12,10 +12,10 @@
   align-items: center;
   justify-content: space-around;
   padding: 22px 0 22px 0;
+  font-family: "poppins";
 }
 .logo{
   color: rgb(15, 59, 15);
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -28,7 +28,7 @@
 }
 .nav-item >.item{
   color: rgba(51, 5, 51, 0.653);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: poppins;
   font-weight: 600;
   font-size: 17px;
 }
@@ -96,6 +96,13 @@
 }
 .heading{
   font-family: "Lexend", sans-serif;
+}
+
+.post-card{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.post-card h2{
+  color: rgb(15, 59, 15);
 }
 
 /* input[type=checkbox] {

@@ -48,7 +48,7 @@ function Navbar() {
 
   return (
     <div className="navbar">
-      <div className="logo">Chef House</div>
+      <div className="logo">ManageX</div>
       <div className="menu" ref={crossMenu} onClick={handleToggle}>
         <div className="bar"></div>
         <div className="bar"></div>

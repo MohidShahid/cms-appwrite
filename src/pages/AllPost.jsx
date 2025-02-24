@@ -18,11 +18,11 @@ function AllPost() {
   <div className='w-full py-8'>
      <div className='w-full max-w-7xl mx-auto px-4'>
         <div className="flex flex-wrap">
-         {posts ? (posts.map((post)=>{
+         {posts ? (posts.map((post)=>(
                 <div key={post.$id} className='p-2 w-1/4'> 
-                <PostCard />
+                <PostCard {...post}/>
                 </div>
-            })) : (error)}
+            ))) : (error)}
           
         </div>
      </div>
