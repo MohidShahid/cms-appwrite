@@ -29,7 +29,7 @@ function SignupComponent() {
 
   return (
     <div className="signup flex items-center justify-center w-full h-auto py-8 px-8 ">
-      <div className="signup-container w-96 flex items-center justify-center flex-col gap-4">
+      <div className="signup-container w-96 flex items-center justify-center flex-col gap-4 mx-auto max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10">
       <h2 className="text-center text-2xl font-bold leading-tight">
         Sign up to create account
       </h2>
@@ -44,7 +44,7 @@ function SignupComponent() {
       </p>
       {error && <p className="text-blue-400">{error}</p>}
       
-      <form onSubmit={handleSubmit(handleAccount)}>
+      <form className="flex flex-col gap-4" onSubmit={handleSubmit(handleAccount)}>
       <Input
         label="Full Name"
         className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"

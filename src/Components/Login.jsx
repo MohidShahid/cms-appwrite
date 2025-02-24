@@ -3,7 +3,7 @@ import {Button , Input } from './Index/index'
 import { Link , useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import authService from '../appwrite/auth'
-import { useDispatch } from 'react-redux'
+import { useDispatch , useSelector} from 'react-redux'
 import {login as AuthLogin} from '../store/authSlice'
 
 
@@ -18,8 +18,10 @@ function Login() {
       const session = await authService.login(data)
       if(session){
         const userData = await authService.getCurrentUser();
+        console.log(userData)
         if(userData){
               dispatch(AuthLogin(userData))
+              console.log(dispatch(AuthLogin(userData)))
               navigate('/')
         }
       }
@@ -28,6 +30,9 @@ function Login() {
   setErrors(error.message)
   }
   }
+
+  const userD = useSelector((state) => console.log(state.auth));
+  console.log(userD);
   return (
     <div
     className='flex items-center justify-center w-full'
