@@ -17,6 +17,7 @@ function AllPost() {
   return  (
   <div className='w-full py-8'>
      <div className='w-full max-w-7xl mx-auto px-4'>
+      <h1>showing {posts.length} blog posts </h1>
         <div className="flex flex-wrap">
          {posts ? (posts.map((post)=>(
                 <div key={post.$id} className='p-2 w-1/4'> 
