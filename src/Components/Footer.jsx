@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer className="bg-blue-100/80 font-sans dark:bg-gray-900">
+    <footer className="font-poppins mt-24 ">
     <div className="container px-6 py-12 mx-auto">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
             <div className="sm:col-span-2">
@@ -56,10 +56,10 @@ function Footer() {
                 <img src="https://www.svgrepo.com/show/22048/dribbble.svg" className="" width="30" height="30" alt="db" />
             </div>
         </div>
-        <p className="font-sans p-8 text-start md:text-center md:text-lg md:p-4">© 2023 You Company Inc. All rights reserved.</p>
+        <p className="font-poppins p-8 text-start md:text-center md:text-lg md:p-4">© 2025 You Company Inc. All rights reserved.</p>
     </div>
 </footer>
   )
 }
 
-export default Footer
+export default Footer;

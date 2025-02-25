@@ -16,6 +16,7 @@ function SignupComponent() {
 
   const handleAccount = async (data) => {
     try {
+      console.log(data)
       const userData = await authService.createAccount(data);
       if (userData) {
         dispatch(AuthLogin(userData));
@@ -28,7 +29,7 @@ function SignupComponent() {
 
 
   return (
-    <div className="signup flex items-center justify-center w-full h-auto py-8 px-8 ">
+    <div className="signup flex items-center justify-center w-full h-auto py-8 lg:px-8">
       <div className="signup-container w-96 flex items-center justify-center flex-col gap-4 mx-auto max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10">
       <h2 className="text-center text-2xl font-bold leading-tight">
         Sign up to create account

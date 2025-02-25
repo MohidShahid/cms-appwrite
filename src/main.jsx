@@ -13,7 +13,8 @@ import AddPost from "./pages/AddPost.jsx";
 import Login from "./pages/Login.jsx";
 import Signup from "./pages/Signup.jsx";
 import AuthLayout from "./Components/AuthLayout.jsx";
-
+import ProfileUpload from "./Components/profileUpload.jsx";
+import ChangePassword from "./Components/ChangePassword.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -67,6 +68,22 @@ const router = createBrowserRouter([
         path: "/post/:slug",
         element: <Post />,
       },
+      {
+        path: "/profileUpload",
+        element: (
+          <AuthLayout authentication>
+           <ProfileUpload />
+          </AuthLayout>
+        ),
+      },
+      {
+        path: "/change-password",
+        element: (
+          <AuthLayout authentication>
+           <ChangePassword />
+          </AuthLayout>
+        ),
+      }
     ],
   },
 ]);
