@@ -30,7 +30,7 @@ function SignupComponent() {
 
   return (
     <div className="signup flex items-center justify-center w-full h-auto py-8 lg:px-8">
-      <div className="signup-container w-96 flex items-center justify-center flex-col gap-4 mx-auto max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10">
+      <div className="signup-container w-96 flex items-center justify-center flex-col gap-4 mx-auto max-w-lg rounded-xl p-10 border">
       <h2 className="text-center text-2xl font-bold leading-tight">
         Sign up to create account
       </h2>
