@@ -30,6 +30,7 @@ function Login() {
   setErrors(error.message)
   }
   }
+  // bg-gray-100  border-black/10
   return (
     <div
     className='flex items-center justify-center w-full my-16'
