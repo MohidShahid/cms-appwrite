@@ -23,6 +23,7 @@ function Home() {
       console.log(profileId);
       if (profileId) {
         const imgLink = appwriteService.getFilePreview(profileId);
+        console.log(imgLink)
         setImgUrl(imgLink);
       } else {
         setImgUrl(userImg);

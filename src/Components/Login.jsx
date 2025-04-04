@@ -21,7 +21,6 @@ function Login() {
         console.log(userData)
         if(userData){
               dispatch(AuthLogin(userData))
-              console.log(dispatch(AuthLogin(userData)))
               navigate('/')
         }
       }
